@@ -6,4 +6,4 @@ https://www.youtube.com/watch?v=vsWrXfO3wWw&list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn
 
 ## Here is gragh plot
 
-(images/plot.png)
+![Regression Plot](images/plot.png)  
