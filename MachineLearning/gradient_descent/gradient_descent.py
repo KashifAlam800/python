@@ -1,6 +1,7 @@
 import numpy as np
 import math
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv("test_scores.csv")
 
@@ -25,9 +26,28 @@ def gradient_descent(x,y):
         if closeness:
             break
 
+    graph_plot(m_curr,b_curr)
+
+def graph_plot(m_curr,b_curr):
+    c = df["math"]
+    d = df["cs"]
+
+    # Scatter plot
+    plt.scatter(c, d, color='blue', label='Actual CS Scores')
+
+    # Example regression line
+    y_pred_line = m_curr * c + b_curr
+
+    plt.plot(x, y_pred_line, color='red', label='Predicted Line')
+    plt.xlabel("Math Score")
+    plt.ylabel("CS Score")
+    plt.title("CS Score Prediction from Math Score")
+    plt.legend()
+    plt.show()
+
+
 x = df["math"].to_numpy()
 y = df["cs"].to_numpy()
 
 
 gradient_descent(x,y)
-
