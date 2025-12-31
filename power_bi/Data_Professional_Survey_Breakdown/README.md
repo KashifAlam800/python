@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=pixlHHe_lNQ&list=PLUaB-1hjhk8HqnmK0gQhfmIdCbxwoAoys&index=9
 
-## Here is gragh plot
+## Here is the visualization grapghs
 
 ![visualization](images/visualize.png)  
 
